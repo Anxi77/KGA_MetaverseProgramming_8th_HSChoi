@@ -1,0 +1,6 @@
+﻿  20240903_CelciusFarenheit.cpp
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\20240903\20240903_CelciusFarenheit.cpp(10,21): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  20240903_CompareTwo.cpp
+  20240903_Sum.cpp
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\20240903\20240903_Sum.cpp(11,7): error C2143: 구문 오류: ';'이(가) 'std::cout' 앞에 없습니다.
+  코드를 생성하고 있습니다...
