@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KGA\\Desktop\\KGA_8th_최현성\\Assignments\\C#\\Assignments\\Assignments\\20241007.csproj",
-      "projectName": "20241007",
-      "projectPath": "C:\\Users\\KGA\\Desktop\\KGA_8th_최현성\\Assignments\\C#\\Assignments\\Assignments\\20241007.csproj",
+      "projectUniqueName": "C:\\Users\\KGA\\Desktop\\KGA_8th_최현성\\Assignments\\C#\\Assignments\\20241008\\20241008.csproj",
+      "projectName": "20241008",
+      "projectPath": "C:\\Users\\KGA\\Desktop\\KGA_8th_최현성\\Assignments\\C#\\Assignments\\20241008\\20241008.csproj",
       "packagesPath": "C:\\Users\\KGA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KGA\\Desktop\\KGA_8th_최현성\\Assignments\\C#\\Assignments\\Assignments\\obj\\",
+      "outputPath": "C:\\Users\\KGA\\Desktop\\KGA_8th_최현성\\Assignments\\C#\\Assignments\\20241008\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KGA\\AppData\\Roaming\\NuGet\\NuGet.Config",
