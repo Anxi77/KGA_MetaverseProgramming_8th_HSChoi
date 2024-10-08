@@ -1,0 +1,14 @@
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\bin\Debug\net8.0\UserDataType.exe
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\bin\Debug\net8.0\UserDataType.deps.json
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\bin\Debug\net8.0\UserDataType.runtimeconfig.json
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\bin\Debug\net8.0\UserDataType.dll
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\bin\Debug\net8.0\UserDataType.pdb
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.AssemblyInfoInputs.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.AssemblyInfo.cs
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.csproj.CoreCompileInputs.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.dll
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\refint\UserDataType.dll
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.pdb
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\UserDataType.genruntimeconfig.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\C#\Lectures\UserDataType\obj\Debug\net8.0\ref\UserDataType.dll

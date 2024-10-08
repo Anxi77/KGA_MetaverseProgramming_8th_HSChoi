@@ -1,0 +1,14 @@
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\bin\Debug\net8.0\20241008.exe
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\bin\Debug\net8.0\20241008.deps.json
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\bin\Debug\net8.0\20241008.runtimeconfig.json
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\bin\Debug\net8.0\20241008.dll
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\bin\Debug\net8.0\20241008.pdb
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.AssemblyInfoInputs.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.AssemblyInfo.cs
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.csproj.CoreCompileInputs.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.dll
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\refint\20241008.dll
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.pdb
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\20241008.genruntimeconfig.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\20241008\obj\Debug\net8.0\ref\20241008.dll

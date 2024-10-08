@@ -1,0 +1,4 @@
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\Assignments\obj\Debug\net8.0\20241007.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\Assignments\obj\Debug\net8.0\20241007.AssemblyInfoInputs.cache
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\Assignments\obj\Debug\net8.0\20241007.AssemblyInfo.cs
+C:\Users\KGA\Desktop\KGA_8th_최현성\Assignments\C#\Assignments\Assignments\obj\Debug\net8.0\20241007.csproj.CoreCompileInputs.cache
