@@ -1,9 +1,0 @@
-﻿  About_GetterSetter.cpp
-  About_Inheritance01.cpp
-  About_Inheritance02.cpp
-  About_namespace.cpp
-  코드를 생성하고 있습니다...
-About_Inheritance01.obj : error LNK2005: main이(가) About_GetterSetter.obj에 이미 정의되어 있습니다.
-About_Inheritance02.obj : error LNK2005: main이(가) About_GetterSetter.obj에 이미 정의되어 있습니다.
-About_namespace.obj : error LNK2005: main이(가) About_GetterSetter.obj에 이미 정의되어 있습니다.
-C:\Users\KGA\Desktop\KGA_8th_최현성\Lectures\x64\Debug\20240913.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
