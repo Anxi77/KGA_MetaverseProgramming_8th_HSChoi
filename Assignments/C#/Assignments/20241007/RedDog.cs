@@ -5,7 +5,9 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignments
+/*월남뽕 C# 으로 구현 과제*/
+
+namespace _20241007
 {
     class Game
     {

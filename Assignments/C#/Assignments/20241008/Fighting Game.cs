@@ -39,14 +39,14 @@ namespace _20241008
         
         public class Characters
         {
-            public string Name { get; set; }
-            protected int HP { get; set; }
-            protected int ATK { get; set; }
-            protected int DEF { get; set; }
+            public string Name;
+            protected int HP;
+            protected int ATK;
+            protected int DEF;
             public string name { get => Name; set => Name = value; }
-            public int hp { get => HP; set => HP=value; }
-            public int atk { get => ATK ; set => ATK=value; }
-            public int def { get => DEF ; set => DEF=value; }
+            public int hp { get => HP; set => HP = value; }
+            public int atk { get => ATK ; set => ATK = value; }
+            public int def { get => DEF ; set => DEF = value; }
 
             public virtual void Attack(Characters Defender, bool isCPU)
             {

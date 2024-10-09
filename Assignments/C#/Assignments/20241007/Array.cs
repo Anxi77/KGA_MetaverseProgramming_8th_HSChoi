@@ -1,7 +1,4 @@
 ﻿/*20241007 과제
-1.값 형식과 참조 형식의 차이점
-2.박싱과 언박싱
-3.StringBuilder vs String
 4.배열
 ㄴ학생성적 입력받아 배열에 저장
 ㄴ입력된 성적중 가장 높은 성적과 낮은 성적 출력
@@ -16,7 +13,7 @@
 using System.ComponentModel;
 using System.Security.Cryptography;
 
-namespace Assignments
+namespace _20241007
 {
     internal class Program
     {
