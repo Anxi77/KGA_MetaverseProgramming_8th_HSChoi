@@ -24,6 +24,7 @@ namespace _20241008
     internal class Program
     {
 
+
         public class Player
         {
             public string name = "Player";
@@ -35,7 +36,7 @@ namespace _20241008
             public string name = "CPU";
             public Characters Character { get; set; }
         }
-
+        
         public class Characters
         {
             public string name { get; set; }
