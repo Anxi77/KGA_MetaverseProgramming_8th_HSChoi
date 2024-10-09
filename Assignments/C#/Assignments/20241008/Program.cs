@@ -23,12 +23,7 @@ namespace _20241008
 {
     internal class Program
     {
-        public interface Actions
-        {
-            bool Move();
-            void Attack(Characters Defender, bool isCPU);
-            void Guard(Characters Attacker, bool isCPU);
-        }
+
         public class Player
         {
             public string name = "Player";
@@ -41,7 +36,7 @@ namespace _20241008
             public Characters Character { get; set; }
         }
 
-        public class Characters : Actions
+        public class Characters
         {
             public string name { get; set; }
             public int hp { get; set; }
@@ -180,10 +175,13 @@ namespace _20241008
             public override void Attack(Characters defender, bool isCPU)
             {
                 if (isCPU)
+                {
                     Console.WriteLine($"CPU 스티브의 스크류 어퍼!");
+                }
                 else
+                {
                     Console.WriteLine($"플레이어 스티브의 스크류 어퍼!");
-
+                }
                 int damage = (atk + 5) - defender.def / 2;
                 if (damage > 0)
                 {
@@ -216,9 +214,6 @@ namespace _20241008
 
                 Player player = new Player();
                 CPU cpu = new CPU();
-
-                Ganryu ganryu = new Ganryu();
-                Characters g = (Characters)ganryu;
 
 
                 switch (CharacterSelect)
@@ -269,12 +264,32 @@ namespace _20241008
                     switch (playerAction)
                     {
                         case 1:
-                            player.Character.Attack(cpu.Character, false);
+                            if(cpuAction == 2) 
+                            {
+                                cpu.Character.Guard(player.Character, true);
+                            }
+                            else if (cpuAction == 3)
+                            {
+                                Console.WriteLine($"CPU {cpu.Character.name}이 회피 시도하였다 !");
+                                if (cpu.Character.Move())
+                                {
+                                    Console.WriteLine($"CPU {cpu.Character.name}이 회피 성공 !");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"CPU {cpu.Character.name}이 회피를 실패 !");
+                                    player.Character.Attack(cpu.Character, false);
+                                }
+                            }
+                            else 
+                            {
+                                player.Character.Attack(cpu.Character, false);
+                            }                            
                             break;
                         case 2:
                             if (cpuAction == 1)
                             {
-                                cpu.Character.Guard(player.Character, true);
+                                player.Character.Guard(cpu.Character, false);
                             }
                             else
                             {
