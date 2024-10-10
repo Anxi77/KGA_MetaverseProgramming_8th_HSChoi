@@ -214,27 +214,33 @@ namespace _20241008
             while (PlayerTrig)
             {
                 Console.WriteLine("Welcome to TEKKEN");
-                Console.Write("Type 1) Ganryu , 2) Jin , 3) Steve : ");
-                int CharacterSelect = int.Parse(Console.ReadLine());
+
 
                 Player player = new Player();
                 CPU cpu = new CPU();
-
-
-                switch (CharacterSelect)
+                bool bSelected = true;
+                while (bSelected)
                 {
-                    case 1:
-                        player.Character = new Ganryu();
-                        break;
-                    case 2:
-                        player.Character = new Jin();
-                        break;
-                    case 3:
-                        player.Character = new Steve();
-                        break;
-                    default:
-                        Console.WriteLine("잘못된 선택입니다. 다시 선택해주세요.");
-                        continue;
+                    Console.Write("Type 1) Ganryu , 2) Jin , 3) Steve : ");
+                    int CharacterSelect = int.Parse(Console.ReadLine());
+                    switch (CharacterSelect)
+                    {
+                        case 1:
+                            player.Character = new Ganryu();
+                            bSelected = false;
+                            break;
+                        case 2:
+                            player.Character = new Jin();
+                            bSelected = false;
+                            break;
+                        case 3:
+                            player.Character = new Steve();
+                            bSelected = false;
+                            break;
+                        default:
+                            Console.WriteLine("잘못된 선택입니다. 다시 선택해주세요.");
+                            break;
+                    }
                 }
 
 
