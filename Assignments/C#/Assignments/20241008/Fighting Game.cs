@@ -214,8 +214,6 @@ namespace _20241008
             while (PlayerTrig)
             {
                 Console.WriteLine("Welcome to TEKKEN");
-
-
                 Player player = new Player();
                 CPU cpu = new CPU();
                 bool bSelected = true;

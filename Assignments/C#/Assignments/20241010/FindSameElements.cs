@@ -31,7 +31,7 @@ namespace _20241010
                 //현재의 공통 요소와 다음 배열의 요소들간의 교집합으로 공통된 요소를 추출.
                 commonElements.IntersectWith(Arrays[i]);
             }
-
+            string
             //HashSet commonElements를 배열로 return
             return commonElements.ToArray();
         }
@@ -83,7 +83,6 @@ namespace _20241010
         {
             Console.Write("입력하실 배열의 갯수를 입력하시오 : ");
             int arrNums = int.Parse(Console.ReadLine());
-
             //int 의 key(배열을 담을 인덱스) 와 int[] 배열의 밸류로 이루어진 딕셔너리 생성
             Dictionary<int, int[]> Arrays = new Dictionary<int, int[]>();
 
