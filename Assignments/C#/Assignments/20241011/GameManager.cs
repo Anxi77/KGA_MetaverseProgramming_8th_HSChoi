@@ -26,6 +26,7 @@ public class GameManager
     public SceneManager SceneManager { get; private set; }
     public ItemManager ItemManager { get; private set; }
 
+
     private GameManager() 
     {
         CharacterManager = new CharacterManager();
@@ -36,9 +37,18 @@ public class GameManager
 
     public void GameStart() 
     {
-        Console.Clear();
+        
         while (true)
         {
+            Console.Clear();
+            if (CharacterManager.currentPlayer != null && CharacterManager.currentPlayer.character != null)
+            {
+                Console.WriteLine($"현재 캐릭터 이름 : {CharacterManager.currentPlayer.name}");
+                Console.WriteLine($"현재 캐릭터 직업 : {CharacterManager.currentPlayer.character.name}");
+                Console.WriteLine($"현재 캐릭터 공격력 : {CharacterManager.currentPlayer.character.ATK}");
+                Console.WriteLine($"현재 캐릭터 방어력 : {CharacterManager.currentPlayer.character.DEF}");
+            }
+            Console.WriteLine("==============================================================");
             Console.WriteLine("1) 캐릭터 생성");
             Console.WriteLine("2) 캐릭터 선택");
             Console.WriteLine("3) 아이템 장착");
@@ -57,7 +67,14 @@ public class GameManager
                         break;
                     case 2:
                         SceneManager.SetPlayerScene(CharacterManager);
-                        ItemManager.itemGen(CharacterManager);
+                        if (CharacterManager.currentPlayer.character != null)
+                        {
+                            ItemManager.itemGen(CharacterManager);
+                        }
+                        else 
+                        {
+                            Console.WriteLine("선택된 캐릭터가 없습니다.");
+                        }
                         break;
                     case 3:
                         SceneManager.equipItemScene(CharacterManager);

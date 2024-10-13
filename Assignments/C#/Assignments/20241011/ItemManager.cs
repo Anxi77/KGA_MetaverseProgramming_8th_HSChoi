@@ -13,7 +13,6 @@ public class ItemManager
 
     public void itemGen(CharacterManager characterManager)
     {
-        List<Item> items = new List<Item>();
         Item Knife = new Knife();
         Item Helm = new Helm();
         Item RedPotion = new RedPotion();

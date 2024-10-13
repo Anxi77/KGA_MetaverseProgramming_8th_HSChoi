@@ -11,6 +11,7 @@ public class SceneManager
     public SceneManager() { }
     public void equipItemScene(CharacterManager characterManager)
     {
+        Console.Clear();
         if (characterManager.currentPlayer == null)
         {
             Console.WriteLine("캐릭터가 선택되지 않았습니다.");
@@ -56,6 +57,7 @@ public class SceneManager
     }
     public void UnEquipItemScene(CharacterManager characterManager)
     {
+        Console.Clear();
         if (characterManager.currentPlayer == null)
         {
             Console.WriteLine("캐릭터가 선택되지 않았습니다.");
@@ -77,6 +79,7 @@ public class SceneManager
     }
     public void characterGenScene(CharacterManager characterManager)
     {
+        Console.Clear();
         string name;
         while (true)
         {
@@ -117,6 +120,7 @@ public class SceneManager
     }
     public void showPlayerInfoScene(CharacterManager characterManager)
     {
+        Console.Clear();
         if (characterManager.currentPlayer == null)
         {
             Console.WriteLine("캐릭터가 선택되지 않았습니다.");
@@ -129,6 +133,7 @@ public class SceneManager
     }
     public void DeleteCharacterScene(CharacterManager characterManager)
     {
+        Console.Clear();
         Console.Write("삭제할 캐릭터의 이름을 입력해주세요: ");
         string name = Console.ReadLine();
 
@@ -143,6 +148,7 @@ public class SceneManager
     }
     public void showCharactersScene(CharacterManager characterManager)
     {
+        Console.Clear();
         Console.WriteLine("현재 캐릭터 목록 ");
         Console.WriteLine();
         for (int i = 0; i < characterManager.players.Count; i++)
@@ -152,9 +158,10 @@ public class SceneManager
     }
     public void SetPlayerScene(CharacterManager characterManager)
     {
+        Console.Clear();
         showCharactersScene(characterManager);
         Console.WriteLine();
-        Console.Write("선택할 캐릭터의 이름을 입력해주세요");
+        Console.Write("선택할 캐릭터의 이름을 입력해주세요 : ");
         string name = Console.ReadLine();
         if (characterManager.SetPlayer(name))
         {
