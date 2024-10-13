@@ -8,19 +8,7 @@ using static CharacterManager;
 
 public class SceneManager
 {
-    private static SceneManager _instance;
-    public static SceneManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new SceneManager();
-            }
-            return _instance;
-        }
-    }
-    private SceneManager() { }
+    public SceneManager() { }
     public void equipItemScene(CharacterManager characterManager)
     {
         if (characterManager.currentPlayer == null)

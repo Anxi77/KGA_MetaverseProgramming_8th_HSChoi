@@ -9,25 +9,15 @@ using static CharacterManager;
 
 public class CharacterManager
 {
-    private static CharacterManager _instance;
-    public static CharacterManager Instance
-    {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new CharacterManager();
-            }
-            return _instance;
-        }
-    }
     public List<Player> players { get; private set; }
     public Player currentPlayer { get; set; }
-    private CharacterManager()
+
+    public CharacterManager()
     {
         players = new List<Player>();
         currentPlayer = new Player();
     }
+
     public bool SetPlayer(string name)
     {
         var player = players.FirstOrDefault(p => p.name == name);

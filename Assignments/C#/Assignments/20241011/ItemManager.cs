@@ -7,22 +7,10 @@ using static CharacterManager;
 
 public class ItemManager
 {
-    private static ItemManager _instance;
-    public static ItemManager Instance
+    public ItemManager() 
     {
-        get
-        {
-            if (_instance == null)
-            {
-                _instance = new ItemManager();
-            }
-            return _instance;
-        }
-    }   
-    private ItemManager() 
-    {
-        // itemGen() 메서드를 여기서 직접 호출하지 않음
     }
+
     public void itemGen(CharacterManager characterManager)
     {
         List<Item> items = new List<Item>();

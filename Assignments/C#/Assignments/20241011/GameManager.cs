@@ -22,50 +22,18 @@ public class GameManager
         }
     }
 
-    //각 매니저 클래스들을 프라이빗으로 선언만 하고
-    private CharacterManager _characterManager;
-    private SceneManager _sceneManager;
-    private ItemManager _itemManager;
+    public CharacterManager CharacterManager { get; private set; }
+    public SceneManager SceneManager { get; private set; }
+    public ItemManager ItemManager { get; private set; }
 
-    //실제 매니저 클래스들의 인스턴스의 생성자를 분리하여 관리
-    public CharacterManager CharacterManager 
-    {
-        get
-        {
-            if (_characterManager == null)
-            {
-                _characterManager = CharacterManager.Instance;
-            }
-            return _characterManager;
-        }
-    }
-    public SceneManager SceneManager
-    {
-        get
-        {
-            if (_sceneManager == null)
-            {
-                _sceneManager = SceneManager.Instance;
-            }
-            return _sceneManager;
-        }
-    }
-    public ItemManager ItemManager
-    {
-        get
-        {
-            if (_itemManager == null)
-            {
-                _itemManager = ItemManager.Instance;
-            }
-            return _itemManager;
-        }
-    }
     private GameManager() 
     {
+        CharacterManager = new CharacterManager();
+        SceneManager = new SceneManager();
+        ItemManager = new ItemManager();
         GameStart();
     }
-    //각 매니저 클래스들이 필요할때 gamestart에서 생성되어 순환 참조를 방지한다.
+
     public void GameStart() 
     {
         Console.Clear();
@@ -89,7 +57,7 @@ public class GameManager
                         break;
                     case 2:
                         SceneManager.SetPlayerScene(CharacterManager);
-                        ItemManager.Instance.itemGen(CharacterManager.Instance);
+                        ItemManager.itemGen(CharacterManager);
                         break;
                     case 3:
                         SceneManager.equipItemScene(CharacterManager);
