@@ -213,7 +213,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 593eb05be5fae884cb42adc13534fa11,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1824966170}
   m_SourcePrefab: {fileID: 100100000, guid: 593eb05be5fae884cb42adc13534fa11, type: 3}
 --- !u!1 &317549117
 GameObject:
@@ -756,6 +760,7 @@ GameObject:
   - component: {fileID: 1107310346}
   - component: {fileID: 1107310344}
   - component: {fileID: 1107310343}
+  - component: {fileID: 1107310347}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -814,10 +819,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 7
+  m_Speed: 35.5
   m_Acceleration: 7
   avoidancePriority: 50
-  m_AngularSpeed: 52.61
+  m_AngularSpeed: 1010.3
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -849,6 +854,18 @@ CapsuleCollider:
   m_Height: 2.61
   m_Direction: 1
   m_Center: {x: 0, y: 1.39, z: 0}
+--- !u!114 &1107310347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107310341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3c1e9f3ff45e747892ffbce02729fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1133612457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1298,33 @@ Transform:
   - {fileID: 1133612458}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1824966169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 593eb05be5fae884cb42adc13534fa11,
+    type: 3}
+  m_PrefabInstance: {fileID: 144701870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1824966170
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824966169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a785c9e1115700f44a85ece6e1598678, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
