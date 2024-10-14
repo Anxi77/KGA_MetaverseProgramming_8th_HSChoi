@@ -47,7 +47,7 @@ public class SceneManager
         Console.WriteLine("보유한 아이템");
         foreach (var inven in characterManager.currentPlayer.character.Inventory)
         {
-            Console.WriteLine($" {inven.Key} {inven.Value.name}");
+            Console.WriteLine($" {inven.Key} {inven.Value.name} {inven.Value.}");
         }
         Console.WriteLine("장착한 아이템");
         foreach (var equipped in characterManager.currentPlayer.character.equippedItems)
@@ -126,10 +126,12 @@ public class SceneManager
             Console.WriteLine("캐릭터가 선택되지 않았습니다.");
             return;
         }
-
-        Console.WriteLine($"이름 : {characterManager.currentPlayer.name}");
-        Console.WriteLine($"공격력 : {characterManager.currentPlayer.character.ATK}");
-        Console.WriteLine($"방어력 : {characterManager.currentPlayer.character.DEF}");
+        else if (characterManager.currentPlayer.character != null)
+        {
+            Console.WriteLine($"이름 : {characterManager.currentPlayer.name}");
+            Console.WriteLine($"공격력 : {characterManager.currentPlayer.character.ATK}");
+            Console.WriteLine($"방어력 : {characterManager.currentPlayer.character.DEF}");
+        }
     }
     public void DeleteCharacterScene(CharacterManager characterManager)
     {
@@ -153,6 +155,7 @@ public class SceneManager
         Console.WriteLine();
         for (int i = 0; i < characterManager.players.Count; i++)
         {
+            Console.WriteLine();
             Console.WriteLine($"\t{i + 1}) 이름 : {characterManager.players[i].name} 직업 : {characterManager.players[i].character.name}");
         }
     }

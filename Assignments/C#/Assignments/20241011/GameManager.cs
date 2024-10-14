@@ -21,12 +21,9 @@ public class GameManager
             return _instance;
         }
     }
-
     public CharacterManager CharacterManager { get; private set; }
     public SceneManager SceneManager { get; private set; }
     public ItemManager ItemManager { get; private set; }
-
-
     private GameManager() 
     {
         CharacterManager = new CharacterManager();
@@ -34,10 +31,8 @@ public class GameManager
         ItemManager = new ItemManager();
         GameStart();
     }
-
     public void GameStart() 
-    {
-        
+    {       
         while (true)
         {
             Console.Clear();
@@ -103,7 +98,3 @@ public class GameManager
         }
     }
 }    
-
-
-
-

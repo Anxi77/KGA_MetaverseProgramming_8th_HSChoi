@@ -11,13 +11,11 @@ public class CharacterManager
 {
     public List<Player> players { get; private set; }
     public Player currentPlayer { get; set; }
-
     public CharacterManager()
     {
         players = new List<Player>();
         currentPlayer = new Player();
     }
-
     public bool SetPlayer(string name)
     {
         var player = players.FirstOrDefault(p => p.name == name);
@@ -77,7 +75,6 @@ public class CharacterManager
 
         return true;
     }
-
     public class Player
     {
         public string name { get; set; }
