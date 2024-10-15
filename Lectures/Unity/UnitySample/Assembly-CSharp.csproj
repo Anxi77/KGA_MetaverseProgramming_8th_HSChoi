@@ -62,7 +62,10 @@
   <ItemGroup>
     <Compile Include="Assets\_Project\Scripts\InspectorTest\ReferecnceVariableTest.cs" />
     <Compile Include="Assets\_Project\Scripts\InspectorTest\CollectionVariableTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\InspectorTest\UnityAttributeTest.cs" />
     <Compile Include="Assets\_Project\Scripts\MainTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\InspectorTest\UnityStructTest.cs" />
+    <Compile Include="Assets\_Project\Scripts\InspectorTest\ColorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -973,6 +976,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
@@ -987,10 +994,6 @@
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">

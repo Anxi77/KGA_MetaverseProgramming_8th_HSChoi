@@ -19,6 +19,8 @@ public class MyShape
 public class MainTest : MonoBehaviour
 {
     public List<MyShape> shapes;
+
+    UnityAttributeTest uat;
     
     void Start()
     {
