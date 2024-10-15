@@ -23,7 +23,7 @@ public class CharacterMovement : MonoBehaviour
         {
             Vector3 direction = agent.desiredVelocity;
             Quaternion rot = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rot, Time.deltaTime * 10.0f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rot, 1f);
         }
     }
 }
