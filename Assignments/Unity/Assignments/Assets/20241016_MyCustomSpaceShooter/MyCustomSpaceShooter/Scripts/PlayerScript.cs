@@ -12,17 +12,19 @@ namespace SpaceShooter
         public float boundaryXMaxSize = 15.22f;
         public float boundaryYMinSize = -18.62f;
         public float boundaryYMaxSize = 18.62f;
-        float z = 0;
         public GameObject gameOverMessage;
         public Renderer target;
+        public float rotationSpeed = 5f; // 회전 속도 조절을 위한 변수 추가
 
         private void Awake()
         {
             target = GetComponentInChildren<Renderer>();
         }
+
         void Update()
         {
-            PlayerMove();           
+            PlayerMove();
+            PlayerRotate();
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -41,39 +43,44 @@ namespace SpaceShooter
             Time.timeScale = 0;
         }
 
-        public void PlayerMove() 
+        public void PlayerMove()
         {
             float x = Input.GetAxis("Horizontal");
-
             float y = Input.GetAxis("Vertical");
 
+            // 이동 처리
+            Vector3 movement = new Vector3(x, y, 0);
+            transform.position += movement * moveSpeed * Time.deltaTime;
 
-            transform.Rotate(new Vector3(0, 0, -x * 180) * Time.deltaTime);
+            // X축 경계 처리
+            transform.position = new Vector3(
+                Mathf.Clamp(transform.position.x, boundaryXMinSize, boundaryXMaxSize),
+                transform.position.y,
+                transform.position.z
+            );
 
-            transform.Translate(new Vector3(x, 0) * Time.deltaTime * moveSpeed);
-             
-            if (transform.position.x < boundaryXMinSize)
-            {
-                transform.position = new Vector3(boundaryXMinSize, transform.position.y);
-            }
-            else if (transform.position.x > boundaryXMaxSize)
-            {
-                transform.position = new Vector3(boundaryXMaxSize, transform.position.y);
-            }
-
-            transform.Translate(new Vector3(0, y) * Time.deltaTime * moveSpeed);
-
-            if (transform.position.y < boundaryYMinSize)
-            {
-                transform.position = new Vector3(transform.position.x, boundaryYMinSize);
-
-            }
-            else if (transform.position.y > boundaryYMaxSize)
-            {
-                transform.position = new Vector3(transform.position.x, boundaryYMaxSize);
-            }
+            // Y축 경계 처리
+            transform.position = new Vector3(
+                transform.position.x,
+                Mathf.Clamp(transform.position.y, boundaryYMinSize, boundaryYMaxSize),
+                transform.position.z
+            );
         }
 
-        
+        public void PlayerRotate()
+        {
+            float x = Input.GetAxis("Horizontal");
+            float y = Input.GetAxis("Vertical");
+
+            if (x != 0 || y != 0) // 입력이 있을 때만 회전
+            {
+                // 입력 방향을 기반으로 회전 각도 계산
+                float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg - 90f;
+                Quaternion targetRotation = Quaternion.Euler(0f, 0f, angle);
+
+                // 부드러운 회전 적용
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+        }
     }
 }
