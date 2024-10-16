@@ -8,6 +8,8 @@ public class ColorControl
 {
     public Renderer Renderer;
     public Color color;
+    public Transform tranform;
+    public Vector3 startPositon;
 }
 
 public class MultiObjectColorControl : MonoBehaviour
@@ -28,6 +30,7 @@ public class MultiObjectColorControl : MonoBehaviour
             float t = (float)i / (ColorControl.Count-1);
             ColorControl[i].color = Color.Lerp(startColor, endColor, t);
             ColorControl[i].Renderer.material.color = ColorControl[i].color;
+            ColorControl[i].tranform.position.Set(1,2,3);
         }
     }
 }
