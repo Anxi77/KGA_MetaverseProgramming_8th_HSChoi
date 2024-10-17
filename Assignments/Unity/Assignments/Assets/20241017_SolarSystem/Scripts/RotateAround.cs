@@ -21,7 +21,7 @@ public class RotateAround : MonoBehaviour
 
     void Update()
     {
-        transform.RotateAround(Sun.transform.position, Vector3.up, orbitSpeed * Time.time);
-        transform.Rotate(Vector3.up, rotationSpeed * Time.time, Space.Self);
+        transform.RotateAround(Sun.transform.position, Vector3.up, orbitSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime, Space.Self);
     }
 }
